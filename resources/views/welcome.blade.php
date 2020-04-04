@@ -82,11 +82,11 @@
             <div class="content">
                 <div class="title m-b-md">
 
-                    @if(Auth::check())
+                    @auth
                         Hello, {{Auth::user()->name}}
                     @else
                         Laravel
-                    @endif
+                    @endauth
                 </div>
 
                 <div class="links">
