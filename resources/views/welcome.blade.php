@@ -81,12 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-
-                    @auth
-                        Hello, {{Auth::user()->name}}
+                    @guest
+                        Please Sign In
                     @else
-                        Laravel
-                    @endauth
+                        Hey, {{auth()->user()->name}}
+                    @endguest
                 </div>
 
                 <div class="links">
