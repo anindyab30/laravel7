@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>It works again!</h1>
-    <p>It sounds like you want to hear more about {{ $topic }} </p>
-   
-</body>
-</html>
+@component('mail::message')
+
+# A Heading
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere veniam eius ullam excepturi quia delectus dicta dolor! Doloribus, odit culpa! Eum corrupti non quia ducimus necessitatibus esse impedit inventore.
+
+- A List
+- goes
+- here
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi enim libero odit. Impedit, pariatur rerum, unde nisi laborum maiores facere expedita recusandae officiis voluptas inventore qui corrupti et vitae.
+
+@component('mail::button',['url'=>'https://google.com'])
+Vist Google
+@endcomponent
+
+@endcomponent
