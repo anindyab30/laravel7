@@ -14,11 +14,6 @@ class PaymentsController extends Controller
     }
     public function store()
     {
-        request()->user()->notify(new PaymentReceived());
-        //Notification::send(request()->user(),new PaymentReceived());
-        //dd('check email');
-        return redirect()
-            ->route('paymentform')
-            ->with('message','Notification send to your email');
+        request()->user()->notify(new PaymentReceived(900));        
     }
 }

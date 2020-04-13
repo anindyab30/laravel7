@@ -6,7 +6,7 @@
     @csrf
         <button class="btn btn-primary" type="submit" formmethod="POST">Make Payment</button>
         @if(session('message'))
-            <span>{{session('message')}} </span>
+            <div><span>{{session('message')}} </span></div>
         @endif
     </form>
 </div>    
